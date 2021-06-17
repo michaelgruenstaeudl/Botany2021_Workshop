@@ -4,7 +4,7 @@ Workshop W14 by Michael Gruenstaeudl during the conference Botany 2021
 # Assessing sequence coverage and inverted repeat annotations among complete plastid genomes
 
 ### Table of Contents
-1. [Abstract](/doc/abstract.md)
+1. [Abstract](https://github.com/michaelgruenstaeudl/Botany2021_Workshop/doc/abstract.md)
 2. Introduction
 3. [Survey of IR annotations of archived plastid genomes](#survey-of-ir-annotations)
       1. Installation
@@ -15,6 +15,8 @@ Workshop W14 by Michael Gruenstaeudl during the conference Botany 2021
       2. Obtain/prepare data
       3. Simple example
       4. Complex example
+
+---
 
 ### Survey Of IR Annotations
 Software needed: Python 3, [airpg](https://pypi.org/project/airpg/)
@@ -60,12 +62,12 @@ grep "^2" | sort -n | awk 'NR==1; END{print}'
 $ Rscript /path_to_git_folder/extras/airpg_SimpleExample_visualization.R
  ```
 
-![airpg_SimpleExample_visualization](/extras/airpg_SimpleExample_visualization.pdf)
+![](https://github.com/michaelgruenstaeudl/Botany2021_Workshop/extras/airpg_SimpleExample_visualization.pdf)
 
 ##### 3. Complex example
 Foo bar baz
 
-
+---
 
 ### Visualization Of Sequencing Depth And Evenness
 Software: R, [PACVr](https://cran.r-project.org/package=PACVr)
@@ -83,5 +85,7 @@ Foo bar baz
 
 ##### Complex example
 Foo bar baz
+
+---
 
 #1>>airpg_SimpleExample_output1.log 2>&1
