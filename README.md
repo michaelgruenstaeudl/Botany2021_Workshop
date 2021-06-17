@@ -1,2 +1,2 @@
 # Botany2021_Workshop
-Workshop W14 during the conference Botany 2021
+Workshop W14 by Michael Gruenstaeudl during the conference Botany 2021
