@@ -1,0 +1,278 @@
+2021-06-18 00:01:14 [INFO] Summary file '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv' does not exist; generating new file. Thus, no UIDs read.
+2021-06-18 00:01:16 [INFO] Number of UIDs on NCBI: 137
+2021-06-18 00:01:16 [INFO] Number of UIDs to be processed: 137
+2021-06-18 00:01:16 [INFO] Reading and parsing UID '2027267584', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:16 [DEBUG] Fetching XML GenBank entry 2027267584
+2021-06-18 00:01:18 [INFO] Reading and parsing UID '1559969284', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:18 [DEBUG] Fetching XML GenBank entry 1559969284
+2021-06-18 00:01:20 [INFO] Reading and parsing UID '1808704008', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:20 [DEBUG] Fetching XML GenBank entry 1808704008
+2021-06-18 00:01:22 [INFO] Reading and parsing UID '1967015946', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:22 [DEBUG] Fetching XML GenBank entry 1967015946
+2021-06-18 00:01:26 [INFO] Reading and parsing UID '1909392907', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:26 [DEBUG] Fetching XML GenBank entry 1909392907
+2021-06-18 00:01:28 [INFO] Reading and parsing UID '1375962124', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:28 [DEBUG] Fetching XML GenBank entry 1375962124
+2021-06-18 00:01:30 [INFO] Reading and parsing UID '1847741965', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:30 [DEBUG] Fetching XML GenBank entry 1847741965
+2021-06-18 00:01:32 [INFO] Reading and parsing UID '1237089810', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:32 [DEBUG] Fetching XML GenBank entry 1237089810
+2021-06-18 00:01:34 [INFO] Reading and parsing UID '1642520089', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:34 [DEBUG] Fetching XML GenBank entry 1642520089
+2021-06-18 00:01:36 [INFO] Reading and parsing UID '302024733', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:36 [DEBUG] Fetching XML GenBank entry 302024733
+2021-06-18 00:01:37 [INFO] Reading and parsing UID '1904809501', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:38 [DEBUG] Fetching XML GenBank entry 1904809501
+2021-06-18 00:01:39 [INFO] Reading and parsing UID '153973801', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:40 [DEBUG] Fetching XML GenBank entry 153973801
+2021-06-18 00:01:41 [INFO] Reading and parsing UID '1179695667', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:42 [DEBUG] Fetching XML GenBank entry 1179695667
+2021-06-18 00:01:43 [INFO] Reading and parsing UID '1609434678', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:44 [DEBUG] Fetching XML GenBank entry 1609434678
+2021-06-18 00:01:45 [INFO] Reading and parsing UID '1883213366', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:45 [DEBUG] Fetching XML GenBank entry 1883213366
+2021-06-18 00:01:47 [INFO] Reading and parsing UID '428697659', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:47 [DEBUG] Fetching XML GenBank entry 428697659
+2021-06-18 00:01:49 [INFO] Reading and parsing UID '1509838908', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:49 [DEBUG] Fetching XML GenBank entry 1509838908
+2021-06-18 00:01:51 [INFO] Reading and parsing UID '1677606974', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:51 [DEBUG] Fetching XML GenBank entry 1677606974
+2021-06-18 00:01:53 [INFO] Reading and parsing UID '1707506238', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:53 [DEBUG] Fetching XML GenBank entry 1707506238
+2021-06-18 00:01:55 [INFO] Reading and parsing UID '1677606470', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:55 [DEBUG] Fetching XML GenBank entry 1677606470
+2021-06-18 00:01:57 [INFO] Reading and parsing UID '1956751942', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:57 [DEBUG] Fetching XML GenBank entry 1956751942
+2021-06-18 00:01:59 [INFO] Reading and parsing UID '1220104777', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:01:59 [DEBUG] Fetching XML GenBank entry 1220104777
+2021-06-18 00:02:01 [INFO] Reading and parsing UID '1707505741', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:01 [DEBUG] Fetching XML GenBank entry 1707505741
+2021-06-18 00:02:03 [INFO] Reading and parsing UID '1863131217', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:03 [DEBUG] Fetching XML GenBank entry 1863131217
+2021-06-18 00:02:05 [INFO] Reading and parsing UID '1665683028', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:05 [DEBUG] Fetching XML GenBank entry 1665683028
+2021-06-18 00:02:07 [INFO] Reading and parsing UID '1847742048', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:07 [DEBUG] Fetching XML GenBank entry 1847742048
+2021-06-18 00:02:09 [INFO] Reading and parsing UID '1919575137', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:09 [DEBUG] Fetching XML GenBank entry 1919575137
+2021-06-18 00:02:11 [INFO] Reading and parsing UID '1928006758', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:11 [DEBUG] Fetching XML GenBank entry 1928006758
+2021-06-18 00:02:14 [INFO] Reading and parsing UID '27807848', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:14 [DEBUG] Fetching XML GenBank entry 27807848
+2021-06-18 00:02:17 [INFO] Reading and parsing UID '1476653677', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:17 [DEBUG] Fetching XML GenBank entry 1476653677
+2021-06-18 00:02:19 [INFO] Reading and parsing UID '2025264252', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:19 [DEBUG] Fetching XML GenBank entry 2025264252
+2021-06-18 00:02:20 [INFO] Reading and parsing UID '1897836677', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:21 [DEBUG] Fetching XML GenBank entry 1897836677
+2021-06-18 00:02:22 [INFO] Reading and parsing UID '1910802053', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:23 [DEBUG] Fetching XML GenBank entry 1910802053
+2021-06-18 00:02:25 [INFO] Reading and parsing UID '1677607058', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:25 [DEBUG] Fetching XML GenBank entry 1677607058
+2021-06-18 00:02:27 [INFO] Reading and parsing UID '1220104851', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:27 [DEBUG] Fetching XML GenBank entry 1220104851
+2021-06-18 00:02:29 [INFO] Reading and parsing UID '1707506323', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:29 [DEBUG] Fetching XML GenBank entry 1707506323
+2021-06-18 00:02:31 [INFO] Reading and parsing UID '2026156691', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:31 [DEBUG] Fetching XML GenBank entry 2026156691
+2021-06-18 00:02:33 [INFO] Reading and parsing UID '1812101271', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:33 [DEBUG] Fetching XML GenBank entry 1812101271
+2021-06-18 00:02:35 [INFO] Reading and parsing UID '223931033', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:35 [DEBUG] Fetching XML GenBank entry 223931033
+2021-06-18 00:02:37 [INFO] Reading and parsing UID '1464230554', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:37 [DEBUG] Fetching XML GenBank entry 1464230554
+2021-06-18 00:02:39 [INFO] Reading and parsing UID '1677606553', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:39 [DEBUG] Fetching XML GenBank entry 1677606553
+2021-06-18 00:02:41 [INFO] Reading and parsing UID '1760232089', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:41 [DEBUG] Fetching XML GenBank entry 1760232089
+2021-06-18 00:02:42 [INFO] Reading and parsing UID '1845862042', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:43 [DEBUG] Fetching XML GenBank entry 1845862042
+2021-06-18 00:02:44 [INFO] Reading and parsing UID '1863126681', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:45 [DEBUG] Fetching XML GenBank entry 1863126681
+2021-06-18 00:02:46 [INFO] Reading and parsing UID '1707505823', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:47 [DEBUG] Fetching XML GenBank entry 1707505823
+2021-06-18 00:02:48 [INFO] Reading and parsing UID '1999111323', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:49 [DEBUG] Fetching XML GenBank entry 1999111323
+2021-06-18 00:02:50 [INFO] Reading and parsing UID '28202146', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:51 [DEBUG] Fetching XML GenBank entry 28202146
+2021-06-18 00:02:53 [INFO] Reading and parsing UID '1863131300', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:53 [DEBUG] Fetching XML GenBank entry 1863131300
+2021-06-18 00:02:54 [INFO] Reading and parsing UID '1847742131', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:55 [DEBUG] Fetching XML GenBank entry 1847742131
+2021-06-18 00:02:56 [INFO] Reading and parsing UID '704002232', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:57 [DEBUG] Fetching XML GenBank entry 704002232
+2021-06-18 00:02:58 [INFO] Reading and parsing UID '1883997369', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:02:58 [DEBUG] Fetching XML GenBank entry 1883997369
+2021-06-18 00:03:00 [INFO] Reading and parsing UID '1942098113', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:00 [DEBUG] Fetching XML GenBank entry 1942098113
+2021-06-18 00:03:02 [INFO] Reading and parsing UID '1915409093', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:02 [DEBUG] Fetching XML GenBank entry 1915409093
+2021-06-18 00:03:04 [INFO] Reading and parsing UID '1540583114', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:04 [DEBUG] Fetching XML GenBank entry 1540583114
+2021-06-18 00:03:06 [INFO] Reading and parsing UID '749112013', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:06 [DEBUG] Fetching XML GenBank entry 749112013
+2021-06-18 00:03:09 [INFO] Reading and parsing UID '2025264337', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:09 [DEBUG] Fetching XML GenBank entry 2025264337
+2021-06-18 00:03:11 [INFO] Reading and parsing UID '1535790296', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:11 [DEBUG] Fetching XML GenBank entry 1535790296
+2021-06-18 00:03:13 [INFO] Reading and parsing UID '1919576282', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:13 [DEBUG] Fetching XML GenBank entry 1919576282
+2021-06-18 00:03:15 [INFO] Reading and parsing UID '1910802141', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:15 [DEBUG] Fetching XML GenBank entry 1910802141
+2021-06-18 00:03:17 [INFO] Reading and parsing UID '1952003808', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:17 [DEBUG] Fetching XML GenBank entry 1952003808
+2021-06-18 00:03:18 [INFO] Reading and parsing UID '1677607141', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:19 [DEBUG] Fetching XML GenBank entry 1677607141
+2021-06-18 00:03:20 [INFO] Reading and parsing UID '1707506405', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:20 [DEBUG] Fetching XML GenBank entry 1707506405
+2021-06-18 00:03:22 [INFO] Reading and parsing UID '1900533993', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:22 [DEBUG] Fetching XML GenBank entry 1900533993
+2021-06-18 00:03:24 [INFO] Reading and parsing UID '1677606637', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:24 [DEBUG] Fetching XML GenBank entry 1677606637
+2021-06-18 00:03:26 [INFO] Reading and parsing UID '1707505904', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:27 [DEBUG] Fetching XML GenBank entry 1707505904
+2021-06-18 00:03:28 [INFO] Reading and parsing UID '1767098096', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:29 [DEBUG] Fetching XML GenBank entry 1767098096
+2021-06-18 00:03:30 [INFO] Reading and parsing UID '1863126772', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:31 [DEBUG] Fetching XML GenBank entry 1863126772
+2021-06-18 00:03:32 [INFO] Reading and parsing UID '722491637', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:32 [DEBUG] Fetching XML GenBank entry 722491637
+2021-06-18 00:03:34 [INFO] Reading and parsing UID '1845862133', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:34 [DEBUG] Fetching XML GenBank entry 1845862133
+2021-06-18 00:03:36 [INFO] Reading and parsing UID '1863131383', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:36 [DEBUG] Fetching XML GenBank entry 1863131383
+2021-06-18 00:03:38 [INFO] Reading and parsing UID '1677606140', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:38 [DEBUG] Fetching XML GenBank entry 1677606140
+2021-06-18 00:03:40 [INFO] Reading and parsing UID '1030179072', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:40 [DEBUG] Fetching XML GenBank entry 1030179072
+2021-06-18 00:03:41 [INFO] Reading and parsing UID '1904807168', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:42 [DEBUG] Fetching XML GenBank entry 1904807168
+2021-06-18 00:03:43 [INFO] Reading and parsing UID '1847742214', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:43 [DEBUG] Fetching XML GenBank entry 1847742214
+2021-06-18 00:03:45 [INFO] Reading and parsing UID '219562247', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:45 [DEBUG] Fetching XML GenBank entry 219562247
+2021-06-18 00:03:47 [INFO] Reading and parsing UID '1381390600', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:47 [DEBUG] Fetching XML GenBank entry 1381390600
+2021-06-18 00:03:48 [INFO] Reading and parsing UID '657173776', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:49 [DEBUG] Fetching XML GenBank entry 657173776
+2021-06-18 00:03:50 [INFO] Reading and parsing UID '1790885143', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:51 [DEBUG] Fetching XML GenBank entry 1790885143
+2021-06-18 00:03:52 [INFO] Reading and parsing UID '1678641948', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:53 [DEBUG] Fetching XML GenBank entry 1678641948
+2021-06-18 00:03:54 [INFO] Reading and parsing UID '169142775', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:55 [DEBUG] Fetching XML GenBank entry 169142775
+2021-06-18 00:03:56 [INFO] Reading and parsing UID '1819290917', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:56 [DEBUG] Fetching XML GenBank entry 1819290917
+2021-06-18 00:03:58 [INFO] Reading and parsing UID '1909943078', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:03:58 [DEBUG] Fetching XML GenBank entry 1909943078
+2021-06-18 00:03:59 [INFO] Reading and parsing UID '1888324394', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:00 [DEBUG] Fetching XML GenBank entry 1888324394
+2021-06-18 00:04:01 [INFO] Reading and parsing UID '330850604', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:02 [DEBUG] Fetching XML GenBank entry 330850604
+2021-06-18 00:04:03 [INFO] Reading and parsing UID '645928751', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:04 [DEBUG] Fetching XML GenBank entry 645928751
+2021-06-18 00:04:05 [INFO] Reading and parsing UID '817527089', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:05 [DEBUG] Fetching XML GenBank entry 817527089
+2021-06-18 00:04:08 [INFO] Reading and parsing UID '1919576369', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:08 [DEBUG] Fetching XML GenBank entry 1919576369
+2021-06-18 00:04:10 [INFO] Reading and parsing UID '1875973940', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:10 [DEBUG] Fetching XML GenBank entry 1875973940
+2021-06-18 00:04:12 [INFO] Reading and parsing UID '1707506490', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:12 [DEBUG] Fetching XML GenBank entry 1707506490
+2021-06-18 00:04:14 [INFO] Reading and parsing UID '1980524347', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:14 [DEBUG] Fetching XML GenBank entry 1980524347
+2021-06-18 00:04:16 [INFO] Reading and parsing UID '1677606722', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:16 [DEBUG] Fetching XML GenBank entry 1677606722
+2021-06-18 00:04:18 [INFO] Reading and parsing UID '1707505986', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:18 [DEBUG] Fetching XML GenBank entry 1707505986
+2021-06-18 00:04:20 [INFO] Reading and parsing UID '1026244935', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:20 [DEBUG] Fetching XML GenBank entry 1026244935
+2021-06-18 00:04:22 [INFO] Reading and parsing UID '1707512137', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:22 [DEBUG] Fetching XML GenBank entry 1707512137
+2021-06-18 00:04:26 [INFO] Reading and parsing UID '1863131466', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:26 [DEBUG] Fetching XML GenBank entry 1863131466
+2021-06-18 00:04:28 [INFO] Reading and parsing UID '1677606222', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:28 [DEBUG] Fetching XML GenBank entry 1677606222
+2021-06-18 00:04:30 [INFO] Reading and parsing UID '1693299538', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:30 [DEBUG] Fetching XML GenBank entry 1693299538
+2021-06-18 00:04:32 [INFO] Reading and parsing UID '1644670806', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:32 [DEBUG] Fetching XML GenBank entry 1644670806
+2021-06-18 00:04:33 [INFO] Reading and parsing UID '1863130968', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:34 [DEBUG] Fetching XML GenBank entry 1863130968
+2021-06-18 00:04:35 [INFO] Reading and parsing UID '1847742298', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:36 [DEBUG] Fetching XML GenBank entry 1847742298
+2021-06-18 00:04:37 [INFO] Reading and parsing UID '2018128733', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:37 [DEBUG] Fetching XML GenBank entry 2018128733
+2021-06-18 00:04:39 [INFO] Reading and parsing UID '1847741799', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:39 [DEBUG] Fetching XML GenBank entry 1847741799
+2021-06-18 00:04:41 [INFO] Reading and parsing UID '1935001964', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:41 [DEBUG] Fetching XML GenBank entry 1935001964
+2021-06-18 00:04:43 [INFO] Reading and parsing UID '1819291002', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:43 [DEBUG] Fetching XML GenBank entry 1819291002
+2021-06-18 00:04:44 [INFO] Reading and parsing UID '1708294524', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:45 [DEBUG] Fetching XML GenBank entry 1708294524
+2021-06-18 00:04:46 [INFO] Reading and parsing UID '1714235262', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:47 [DEBUG] Fetching XML GenBank entry 1714235262
+2021-06-18 00:04:48 [INFO] Reading and parsing UID '1679362946', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:48 [DEBUG] Fetching XML GenBank entry 1679362946
+2021-06-18 00:04:50 [INFO] Reading and parsing UID '1805523845', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:50 [DEBUG] Fetching XML GenBank entry 1805523845
+2021-06-18 00:04:52 [INFO] Reading and parsing UID '1707506574', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:52 [DEBUG] Fetching XML GenBank entry 1707506574
+2021-06-18 00:04:53 [INFO] Reading and parsing UID '1609434512', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:54 [DEBUG] Fetching XML GenBank entry 1609434512
+2021-06-18 00:04:55 [INFO] Reading and parsing UID '1678645139', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:56 [DEBUG] Fetching XML GenBank entry 1678645139
+2021-06-18 00:04:57 [INFO] Reading and parsing UID '1677606804', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:57 [DEBUG] Fetching XML GenBank entry 1677606804
+2021-06-18 00:04:59 [INFO] Reading and parsing UID '1707506071', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:04:59 [DEBUG] Fetching XML GenBank entry 1707506071
+2021-06-18 00:05:01 [INFO] Reading and parsing UID '1863131549', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:01 [DEBUG] Fetching XML GenBank entry 1863131549
+2021-06-18 00:05:03 [INFO] Reading and parsing UID '1677606303', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:03 [DEBUG] Fetching XML GenBank entry 1677606303
+2021-06-18 00:05:04 [INFO] Reading and parsing UID '808178082', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:05 [DEBUG] Fetching XML GenBank entry 808178082
+2021-06-18 00:05:06 [INFO] Reading and parsing UID '1863131051', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:07 [DEBUG] Fetching XML GenBank entry 1863131051
+2021-06-18 00:05:08 [INFO] Reading and parsing UID '928189873', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:08 [DEBUG] Fetching XML GenBank entry 928189873
+2021-06-18 00:05:14 [INFO] Reading and parsing UID '1524089268', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:14 [DEBUG] Fetching XML GenBank entry 1524089268
+2021-06-18 00:05:16 [INFO] Reading and parsing UID '1847742388', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:16 [DEBUG] Fetching XML GenBank entry 1847742388
+2021-06-18 00:05:18 [INFO] Reading and parsing UID '1847741882', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:18 [DEBUG] Fetching XML GenBank entry 1847741882
+2021-06-18 00:05:19 [INFO] Reading and parsing UID '1654264260', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:20 [DEBUG] Fetching XML GenBank entry 1654264260
+2021-06-18 00:05:21 [INFO] Reading and parsing UID '408773073', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:22 [DEBUG] Fetching XML GenBank entry 408773073
+2021-06-18 00:05:23 [INFO] Reading and parsing UID '1575646680', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:23 [DEBUG] Fetching XML GenBank entry 1575646680
+2021-06-18 00:05:25 [INFO] Reading and parsing UID '1549111258', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:26 [DEBUG] Fetching XML GenBank entry 1549111258
+2021-06-18 00:05:29 [INFO] Reading and parsing UID '1805523930', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:29 [DEBUG] Fetching XML GenBank entry 1805523930
+2021-06-18 00:05:31 [INFO] Reading and parsing UID '1707506657', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:31 [DEBUG] Fetching XML GenBank entry 1707506657
+2021-06-18 00:05:32 [INFO] Reading and parsing UID '1609434595', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:33 [DEBUG] Fetching XML GenBank entry 1609434595
+2021-06-18 00:05:34 [INFO] Reading and parsing UID '1678645222', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:35 [DEBUG] Fetching XML GenBank entry 1678645222
+2021-06-18 00:05:36 [INFO] Reading and parsing UID '1511245288', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:36 [DEBUG] Fetching XML GenBank entry 1511245288
+2021-06-18 00:05:38 [INFO] Reading and parsing UID '1677606889', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:38 [DEBUG] Fetching XML GenBank entry 1677606889
+2021-06-18 00:05:40 [INFO] Reading and parsing UID '1707506154', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:40 [DEBUG] Fetching XML GenBank entry 1707506154
+2021-06-18 00:05:42 [INFO] Reading and parsing UID '1677606385', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:42 [DEBUG] Fetching XML GenBank entry 1677606385
+2021-06-18 00:05:43 [INFO] Reading and parsing UID '1792268277', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:44 [DEBUG] Fetching XML GenBank entry 1792268277
+2021-06-18 00:05:46 [INFO] Reading and parsing UID '1381393911', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:46 [DEBUG] Fetching XML GenBank entry 1381393911
+2021-06-18 00:05:48 [INFO] Reading and parsing UID '745748984', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:48 [DEBUG] Fetching XML GenBank entry 745748984
+2021-06-18 00:05:50 [INFO] Reading and parsing UID '1863131134', writing to '/home/michael_science/Desktop/airpg_SimpleExample/airpg_SimpleExample_output1.tsv'.
+2021-06-18 00:05:50 [DEBUG] Fetching XML GenBank entry 1863131134
+2021-06-18 00:05:51 [INFO] Blacklist is empty. No entries removed.
