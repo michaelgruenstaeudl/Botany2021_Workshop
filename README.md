@@ -1,9 +1,11 @@
-#### Botany 2021 - Workshop
+### Botany 2021 - Workshop
 Workshop W14 by Michael Gruenstaeudl during the conference Botany 2021
 
 # Assessing sequence coverage and inverted repeat annotations among complete plastid genomes
 
-### Table of Contents
+---
+
+## Table of Contents
 1. [Abstract](https://github.com/michaelgruenstaeudl/Botany2021_Workshop/blob/main/doc/abstract.md)
 2. Introduction
 3. [Survey of IR annotations of archived plastid genomes](#survey-of-ir-annotations)
@@ -18,14 +20,14 @@ Workshop W14 by Michael Gruenstaeudl during the conference Botany 2021
 
 ---
 
-### Survey Of IR Annotations
+## Survey Of IR Annotations
 Software needed: Python 3, [airpg](https://pypi.org/project/airpg/)
 
-##### 1. Installation of airpg
+#### 1. Installation of airpg
 ```bash
 $ pip install airpg
 ```
-##### 2. Simple example
+#### 2. Simple example
 + _Objective_: What proportion of all complete plastid genomes of all moss lineages (i.e., liverworts, hornworts, and mosses) submitted to NCBI Nucleotide since the beginning of 2000 does not have complete IR annotations?<br>
 + _Time needed_: ca. 8 min.
 
@@ -63,26 +65,26 @@ $ Rscript /path_to_git_folder/extras/airpg_SimpleExample_visualization.R
  ```
 ![](https://github.com/michaelgruenstaeudl/Botany2021_Workshop/blob/main/extras/airpg_SimpleExample_visualization.png)
 
-##### 3. Complex example
+#### 3. Complex example
 Foo bar baz
 
 ---
 
-### Visualization Of Sequencing Depth And Evenness
+## Visualization Of Sequencing Depth And Evenness
 Software: R, [PACVr](https://cran.r-project.org/package=PACVr)
 
-##### Installation of PACVr
+#### Installation of PACVr
 ```bash
 $ R
 install.packages("PACVr")
 ```
-##### Obtain/prepare data
+#### Obtain/prepare data
 Foo bar baz
 
-##### Simple example
+#### Simple example
 Foo bar baz
 
-##### Complex example
+#### Complex example
 Foo bar baz
 
 ---
