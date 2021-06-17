@@ -76,7 +76,7 @@ myPlot = base_plot +
           legend.text = element_text(size=14),
           legend.title = element_text(size=14))
 
-ggsave(file = "./airpg_SimpleExample_visualization.pdf", plot=myPlot)
+ggsave(file = "./airpg_SimpleExample_visualization.png", plot=myPlot)
 
 ########################################################################
 

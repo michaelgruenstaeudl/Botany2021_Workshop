@@ -62,7 +62,7 @@ grep "^2" | sort -n | awk 'NR==1; END{print}'
 $ Rscript /path_to_git_folder/extras/airpg_SimpleExample_visualization.R
  ```
 
-![](https://github.com/michaelgruenstaeudl/Botany2021_Workshop/extras/airpg_SimpleExample_visualization.pdf)
+![](https://github.com/michaelgruenstaeudl/Botany2021_Workshop/extras/airpg_SimpleExample_visualization.png)
 
 ##### 3. Complex example
 Foo bar baz
