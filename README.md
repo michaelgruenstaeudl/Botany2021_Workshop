@@ -68,6 +68,11 @@ $ Rscript /path_to_git_folder/extras/airpg_SimpleExample_visualization.R
 #### 3. Complex example
 Foo bar baz
 
+```bash
+# Get total number of families represented by these records
+$ awk -F'\t' '{print $11}' airpg_ComplexExample_output1.tsv | awk -F';' '{ for(i=1;i<=NF;i++) print $i }' | grep "aceae" | sort -u | wc -l
+# 308
+```
 ---
 
 ## Visualization Of Sequencing Depth And Evenness
