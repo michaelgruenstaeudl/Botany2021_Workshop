@@ -1,4 +1,4 @@
-### Mapping sequence reads to a plastid genome
+# Mapping sequence reads to a plastid genome
 To measure sequencing depth and evenness of a plastid genome, the sequence reads that were originally used to assemble that genome must be mapped against its complete genome sequence. This page explains the process of mapping sequence reads against a given plastid genome. For the purpose of this tutorial, we will select a plastid genome record from GenBank as input.
 
 ---
@@ -7,7 +7,7 @@ To measure sequencing depth and evenness of a plastid genome, the sequence reads
 
 Information needed:
 + GenBank accession number of plastid genome record (e.g., [NC_026562](https://www.ncbi.nlm.nih.gov/nuccore/NC_026562))
-+ Corresponding NCBI SRA number for raw reads (e.g., [SRR7285294](https://www.ncbi.nlm.nih.gov/sra/?term=SRR7285294))
++ Corresponding NCBI SRA number for raw sequence reads of plastid genome (e.g., [SRR7285294](https://www.ncbi.nlm.nih.gov/sra/?term=SRR7285294))
 
 Software needed:
 + [NCBI Entrez Direct](https://www.ncbi.nlm.nih.gov/books/NBK179288/#_chapter6_Examples_) (>09/03/2016)
