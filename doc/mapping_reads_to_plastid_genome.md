@@ -1,136 +1,90 @@
 ### Mapping sequence reads to a plastid genome
-To measure sequencing depth and evenness of a plastid genome, the sequence reads that were originally used to assemble that genome must be mapped against it. This page explains the process of mapping sequence reads against a given plastid genome. To start, you need to know the GenBank accession number of the plastid genome ...
+To measure sequencing depth and evenness of a plastid genome, the sequence reads that were originally used to assemble that genome must be mapped against its complete genome sequence. This page explains the process of mapping sequence reads against a given plastid genome. For the purpose of this tutorial, we will select a plastid genome record from GenBank as input.
 
 ---
 
 ## Prerequisites
 
+Information needed:
++ GenBank accession number of plastid genome record (e.g., NC_026562)
++ Corresponding NCBI SRA number for raw reads (e.g., )
+
 Software needed:
 + ncbi-entrez-direct (version number here)
 + sra-toolkit (>2.10.8)
 + samtools (>1.10)
-+ BOWTIE2 (>2.3.4.1)
-+ TRIMMOMATIC (version number here)
-
-Other needed:
-+ GenBank accession number
++ bowtie2 (>2.3.4.1)
++ trimmomatic (version number here)
 
 ---
 
+## Step-by-step workflow
 
-
-
-# DEFINITIONS
-SAMPLE=$1
-ACCESSION=$2
-SRA=$3
-
-# FOLDERS
-mkdir -p $SAMPLELOC/$SAMPLE/ReadMapping
-
-# download GenBank
-${NCBIENT}esearch -db nucleotide -query $ACCESSION | ${NCBIENT}efetch -format gb > $SAMPLELOC/$SAMPLE/${ACCESSION}.gb
-
-# download reference fasta
-${NCBIENT}esearch -db nucleotide -query $ACCESSION | ${NCBIENT}efetch -format fasta > $SAMPLELOC/$SAMPLE/${ACCESSION}_ref.fasta
-
-# download reads
-cd $SAMPLELOC/$SAMPLE
-${SRAT}prefetch --max-size 50000000 $SRA
-cd /scratch/nilsj24/
-${SRAT}fasterq-dump.2.10.8 --split-3 --skip-technical $SAMPLELOC/$SAMPLE/$SRA/$SRA.sra -O $SAMPLELOC/$SAMPLE/ReadMapping
-
-java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar PE $SAMPLELOC/$SAMPLE/ReadMapping/${SRA}.sra_1.fastq $SAMPLELOC/$SAMPLE/ReadMapping/${SRA}.sra_2.fastq  $SAMPLELOC/$SAMPLE/ReadMapping/${SRA}_1_PE.fastq $SAMPLELOC/$SAMPLE/ReadMapping/${SRA}_1_SE.fastq $SAMPLELOC/$SAMPLE/ReadMapping/${SRA}_2_PE.fastq $SAMPLELOC/$SAMPLE/ReadMapping/${SRA}_2_SE.fastq ILLUMINACLIP:/$EBROOTTRIMMOMATIC/adapters/TruSeq3-PE.fa:2:30:10:2:keepBothReads LEADING:3 TRAILING:3 MINLEN:36
-
-# conduct mapping of reads
-REF=$SAMPLELOC/$SAMPLE/${ACCESSION}_ref.fasta
-READSPER1=$SAMPLELOC/$SAMPLE/ReadMapping/${SRA}_1_PE.fastq
-READSPER2=$SAMPLELOC/$SAMPLE/ReadMapping/${SRA}_2_PE.fastq
-
-mkdir -p $SAMPLELOC/$SAMPLE/ReadMapping/db
-${BOWTIE}bowtie2-build $REF $SAMPLELOC/$SAMPLE/ReadMapping/db/$ACCESSION
-${BOWTIE}bowtie2 -x $SAMPLELOC/$SAMPLE/ReadMapping/db/$ACCESSION -1  $READSPER1 -2 $READSPER2 -S $SAMPLELOC/$SAMPLE/ReadMapping/${ACCESSION}_mapping.sam
-${SAM}samtools view -Sb -F 0x04 $SAMPLELOC/$SAMPLE/ReadMapping/${ACCESSION}_mapping.sam > $SAMPLELOC/$SAMPLE/ReadMapping/${ACCESSION}_mapping_OneMoreLocations.bam
-${SAM}samtools sort $SAMPLELOC/$SAMPLE/ReadMapping/${ACCESSION}_mapping_OneMoreLocations.bam > $SAMPLELOC/$SAMPLE/${ACCESSION}_mapping_OneMoreLocations.sorted.bam
-${SAM}samtools index $SAMPLELOC/$SAMPLE/${ACCESSION}_mapping_OneMoreLocations.sorted.bam
-
-rm -rf $SAMPLELOC/$SAMPLE/ReadMapping
-rm -rf $SAMPLELOC/$SAMPLE/$SRA
-
-
-
-
-
-#### 1. Installation of airpg
+##### Define target genome record and corresponding sequence reads
 ```bash
-$ pip install airpg
-```
-#### 2. Application of airpg
-+ _Objective_: What proportion of all complete plastid genomes of all moss lineages (i.e., liverworts, hornworts, and mosses) submitted to NCBI Nucleotide since the beginning of 2000 does not have complete IR annotations?<br>
-+ _Time needed_: ca. 8 min.
-
-Identify the plastid genomes:
-```bash
-$ airpg_identify.py -q "complete genome[TITLE] AND \
-(chloroplast[TITLE] OR plastid[TITLE]) AND \
-2000/01/01:2021/05/31[PDAT] NOT partial[TITLE] \
-AND (Marchantiophyta[ORGN] OR Bryophyta[ORGN] \
-OR Anthocerotophyta[ORGN])" \
- -o airpg_SimpleExample_output1.tsv
- ```
-
-Analyze their IR annotations:
- ```bash
- $ airpg_analyze.py -i airpg_SimpleExample_output1.tsv \
- -m john.smith@example.com -o airpg_SimpleExample_output2.tsv
-  ```
-
-Visualize the accumulation of plastid genomes of all moss lineages with and without complete IR annotations over time.
-```bash
-# Get number of genome records
-$ NL=$(wc -l airpg_SimpleExample_output1.tsv | awk '{print $1}')
-$ echo "$NL-1" | bc
-# 76
-
-# Get submission dates of oldest and newest genome record
-$ awk -F'\t' '{print $6}' airpg_SimpleExample_output1.tsv | \
-grep "^2" | sort -n | awk 'NR==1; END{print}'
-# 2003-02-04
-# 2021-04-24
-
-# Adjust script airpg_SimpleExample_visualization.R manually and then run
-$ Rscript /path_to_git_folder/extras/airpg_SimpleExample_visualization.R
- ```
-![](https://github.com/michaelgruenstaeudl/Botany2021_Workshop/blob/main/extras/airpg_SimpleExample_visualization.png)
-
----
-
-## Visualization Of Sequencing Depth And Evenness
-Software: R, [PACVr](https://cran.r-project.org/package=PACVr)
-
-#### Installation of PACVr
-```bash
-$ R
-install.packages("PACVr")
-```
-#### Obtain/prepare genome data
-Foo bar baz
-
-#### Application of PACVr
-Foo bar baz
-
-
----
-
-#### 3. airpg - Complex example
-Foo bar baz
-
-```bash
-# Get total number of families represented by these records
-$ awk -F'\t' '{print $11}' airpg_ComplexExample_output1.tsv | \
-awk -F';' '{ for(i=1;i<=NF;i++) print $i }' | grep "aceae" | \
-sort -u | wc -l
-# 308
+ACCESSION=NC_026562
+SRA_NUMBER=$3
 ```
 
-#1>>airpg_SimpleExample_output1.log 2>&1
+##### If software not installed globally, setting paths
+```bash
+PATH_ENTREZ=/PATH/TO/NCBI-ENTREZ-DIRECT/
+PATH_SRATOOL=/PATH/TO/SRA-TOOLKIT/
+PATH_TRIMMO=/PATH/TO/TRIMMOMATIC/
+PATH_BOWTIE2=/PATH/TO/BOWTIE2/
+PATH_SAMT=/PATH/TO/SAMTOOLS/
+```
+
+##### Download genome record as flatfile and FASTA file from NCBI GenBank
+```bash
+${PATH_ENTREZ}esearch -db nucleotide -query $ACCESSION | \
+  ${PATH_ENTREZ}efetch -format gb > ${ACCESSION}.gb
+
+${PATH_ENTREZ}esearch -db nucleotide -query $ACCESSION | \
+  ${PATH_ENTREZ}efetch -format fasta > ${ACCESSION}.fasta
+```
+
+##### Download corresponding sequence reads from NCBI SRA
+```bash
+mkdir -p ReadMapping
+${PATH_SRATOOL}prefetch --max-size 50000000 $SRA_NUMBER
+${PATH_SRATOOL}fasterq-dump.2.10.8 --split-3 \
+  --skip-technical $SRA_NUMBER/$SRA_NUMBER.sra -O ReadMapping
+```
+
+##### Trim raw sequence reads via Trimmomatic
+```bash
+java -jar ${PATH_TRIMMO}/trimmomatic-0.39.jar PE \
+  ReadMapping/${SRA_NUMBER}.sra_1.fastq \
+  ReadMapping/${SRA_NUMBER}.sra_2.fastq  \
+  ReadMapping/${SRA_NUMBER}_1_PE.fastq \
+  ReadMapping/${SRA_NUMBER}_1_SE.fastq \
+  ReadMapping/${SRA_NUMBER}_2_PE.fastq \
+  ReadMapping/${SRA_NUMBER}_2_SE.fastq \
+  ILLUMINACLIP:/${PATH_TRIMMO}/adapters/TruSeq3-PE.fa:2:30:10:2:keepBothReads \
+  LEADING:3 TRAILING:3 MINLEN:36
+```
+
+##### Map reads via Bowtie2
+```bash
+mkdir -p ReadMapping/db
+
+${PATH_BOWTIE2}bowtie2-build ${ACCESSION}.fasta ReadMapping/db/$ACCESSION
+
+${PATH_BOWTIE2}bowtie2 -x ReadMapping/db/$ACCESSION \
+  -1 ReadMapping/${SRA_NUMBER}_1_PE.fastq \
+  -2 ReadMapping/${SRA_NUMBER}_2_PE.fastq \
+  -S ReadMapping/${ACCESSION}_mapping.sam
+```
+
+
+##### Map reads via Bowtie2
+```bash
+${PATH_SAMT}samtools view -Sb -F 0x04 ReadMapping/${ACCESSION}_mapping.sam \
+  > ReadMapping/${ACCESSION}_mapping_OneMoreLocations.bam
+
+${PATH_SAMT}samtools sort ReadMapping/${ACCESSION}_mapping_OneMoreLocations.bam \
+  > ${ACCESSION}_mapping_OneMoreLocations.sorted.bam
+
+${PATH_SAMT}samtools index ${ACCESSION}_mapping_OneMoreLocations.sorted.bam
+```
