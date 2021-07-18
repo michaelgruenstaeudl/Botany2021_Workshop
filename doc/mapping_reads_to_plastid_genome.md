@@ -10,11 +10,11 @@ Information needed:
 + Corresponding NCBI SRA number for raw reads (e.g., )
 
 Software needed:
-+ ncbi-entrez-direct (version number here)
-+ sra-toolkit (>2.10.8)
-+ samtools (>1.10)
-+ bowtie2 (>2.3.4.1)
-+ trimmomatic (version number here)
++ [NCBI Entrez Direct] (https://www.ncbi.nlm.nih.gov/books/NBK179288/#_chapter6_Examples_) (>09/03/2016)
++ [NCBI SRA Toolkit](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software) (>2.10.8)
++ [Samtools](https://www.htslib.org/) (>1.10)
++ [Bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml) (>2.3.4)
++ [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) (>0.40)
 
 ---
 
@@ -28,7 +28,7 @@ SRA_NUMBER=$3
 
 ##### If software not installed globally, setting paths
 ```bash
-PATH_ENTREZ=/PATH/TO/NCBI-ENTREZ-DIRECT/
+PATH_ENTREZ=/PATH/TO/ENTREZ-DIRECT/
 PATH_SRATOOL=/PATH/TO/SRA-TOOLKIT/
 PATH_TRIMMO=/PATH/TO/TRIMMOMATIC/
 PATH_BOWTIE2=/PATH/TO/BOWTIE2/
