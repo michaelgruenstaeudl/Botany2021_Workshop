@@ -46,6 +46,7 @@ ${PATH_ENTREZ}esearch -db nucleotide -query $ACCESSION | \
 ```
 
 ##### Download corresponding sequence reads from NCBI SRA
+_Note: This step requires a lot of hard drive space for temporary files (ca. 100 GB)!_
 ```bash
 mkdir -p ReadMapping
 ${PATH_SRATOOL}prefetch --max-size 20000000 $SRA_NUMBER
@@ -79,7 +80,7 @@ ${PATH_BOWTIE2}bowtie2 -x ReadMapping/db/$ACCESSION \
 ```
 
 
-##### Map reads via Bowtie2
+##### Indexing and sorting reads via Samtools
 ```bash
 ${PATH_SAMT}samtools view -Sb -F 0x04 ReadMapping/${ACCESSION}_mapping.sam \
   > ReadMapping/${ACCESSION}_mapping_OneMoreLocations.bam
