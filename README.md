@@ -70,6 +70,12 @@ $ Rscript /path_to_git_folder/extras/airpg_SimpleExample_visualization.R
  ```
 ![](https://github.com/michaelgruenstaeudl/Botany2021_Workshop/blob/main/extras/airpg_SimpleExample_visualization.png)
 
+
+#### Application of airpg - More tutorials
+
+More complex tutorials regarding the application of airpg can be found [here](https://github.com/michaelgruenstaeudl/airpg) as well as - in a platform-independent way - [here](https://codeocean.com/capsule/6723913/tree/v1).
+
+
 ---
 
 ## Visualization Of Sequencing Depth And Evenness
@@ -85,184 +91,28 @@ install.packages("PACVr")
 #### Mapping of sequence reads
 To measure sequencing depth and evenness of a plastid genome, the sequence reads that were originally used to assemble that genome must be mapped against it. The process of read mapping is explained [here](https://github.com/michaelgruenstaeudl/Botany2021_Workshop/blob/main/doc/mapping_reads_to_plastid_genome.md).
 
-#### Application of PACVr
+#### Application of PACVr - Sequencing depth only
+
 ```R
-if (!require("pacman")) {
-  install.packages("pacman")
-}
-library(pacman)
-pacman::p_load(RCircos,
-               genbankr,
-               devtools,
-               tidyverse,
-               vroom)
-pacman::p_install_gh("nilsj9/PACVr")
 library(PACVr)
 
-#### FUNCTIONS ####
-# ---------------------------------------------------------------------------- #
-evennessScore <- function(coverage) {
-  coverage_mean <- round(mean(coverage))
-  D2 <- coverage[coverage <= coverage_mean]
-  E <- 1 - (length(D2) - sum(D2) / coverage_mean) / length(coverage)
-  return(E)
-}
+# Specify input files
+gbkFile <- system.file("extdata", "NC_045072/NC_045072.gb", package="PACVr")
+bamFile <- system.file("extdata", "NC_045072/NC_045072_PlastomeReadsOnly.sorted.bam",package="PACVr")
 
-effSize_conv <- function(x) {
-  return(2 * x / (sqrt(1 - x ^ 2)))
-}
+# Specify output file
+outFile <- "NC_045072_AssemblyCoverage_viz.pdf"
 
+# Run PACVr
 
-#### SAMPLE LIST ####
-# ---------------------------------------------------------------------------- #
-sample_file <- list.files(
-  path = "./",
-  recursive = TRUE,
-  pattern = "^samples_list.csv",
-  full.names = TRUE
-)
-
-if (length(file.exists(sample_file)) == 0) {
-  acquire_data()
-  data <- read.csv("samples_list.csv")
-}
-
-sample_list <- read.csv(sample_file[1], header = TRUE)
-
-#### WORKING DIR ####
-# ---------------------------------------------------------------------------- #
-w_dir <- "/PATH/TO/WORKING/DIRECTORY/"
-
-#### INPUT FILES ####
-# ---------------------------------------------------------------------------- #
-# coverage files
-bed_files <- list.files(
-  path = paste0(w_dir,"/samples"),
-  full.names = TRUE,
-  recursive = TRUE,
-  pattern = ".bed"
-)
-# meta data files
-metadata_files <- list.files(
-  path = paste0(w_dir,"/samples"),
-  full.names = TRUE,
-  recursive = TRUE,
-  pattern = "metadata.csv"
-)
-# annotation files
-gb_files <- list.files(
-  path = paste0(w_dir,"/samples"),
-  full.names = TRUE,
-  recursive = TRUE,
-  pattern = "[0-9].gb"
-)
-
-### READ META DATA ###
-# ---------------------------------------------------------------------------- #
-# lineage information
-sample_list$Lineage <-
-  sapply(gb_files, function(x)
-    gsub(".*Embryophyta ", "", paste(
-      trimws(parseGenBank(x)$SOURCE$lineage), collapse = " "
-    )))
-
-meta_data <- purrr::map_df(metadata_files, ~ vroom::vroom(
-  .x,
-  delim = ",",
-  col_types = c(
-    Number_N = "i",
-    Mismatches = "i",
-    avgLength = "i",
-    Model = "c",
-    `Assembly Method` = "c",
-    `Sequencing Technology` = "c"
-  )
-))
-meta_data <- cbind(sample_list, meta_data)
-
-### READ COVERAGE DATA ###
-# ---------------------------------------------------------------------------- #
-# coverage information
-coverage_data <- purrr::map(bed_files, ~ vroom::vroom(
-  .x,
-  col_types = c(
-    Chromosome = "c",
-    chromStart = "i",
-    chromEnd = "i",
-    coverage = "i",
-    lowCoverage = "c",
-    gene = "c"
-  )
-))
-# remove regions < 250
-coverage_data <-
-  lapply(coverage_data, function(x)
-    x[-which(x$chromEnd - x$chromStart < 249), ])
-
-# Assign names to list elements
-names(coverage_data) <- unlist(unname(lapply(sample_list$Accession,
-                                             function(x)
-                                               c(
-                                                 paste(x, "_genes", sep = ""),
-                                                 paste(x, "_noncoding", sep = ""),
-                                                 paste(x, "_regions", sep = "")
-                                               ))))
-
-# Split list by coverage type
-coverage_regions  <-
-  coverage_data[grep("regions", names(coverage_data))]
-coverage_genes <- coverage_data[grep("genes", names(coverage_data))]
-coverage_noncoding <-
-  coverage_data[grep("noncoding", names(coverage_data))]
-
-# Add coverage depth data
-# plastid partition
-regions <- lapply(coverage_regions, function(x)
-  x %>%
-    tidyr::separate_rows(Chromosome) %>%
-    dplyr::group_by(Chromosome) %>%
-    dplyr::summarise(
-      lowCoverage = sum(lowCoverage == "*", na.rm = TRUE),
-      .groups = "drop"
-    ))
-regions <- lapply(regions, function(x)
-  x %>%
-    tidyr::spread(., Chromosome, lowCoverage))
-regions <- select(dplyr::bind_rows(regions), IRa, IRb, LSC, SSC)
-meta_data <- dplyr::bind_cols(meta_data, regions)
-
-# coding/non-coding partition
-meta_data$coding <-
-  unlist(unname(lapply(coverage_genes, function(x)
-    sum(
-      !is.na(x$lowCoverage == "*")
-    ))))
-meta_data$noncoding <-
-  unlist(unname(lapply(coverage_noncoding, function(x)
-    sum(!is.na(x$lowCoverage == "*")))))
-
-meta_data <- rename(meta_data, Ns = Number_N)
-
-### CALCULATE E-SCORE ###
-# ---------------------------------------------------------------------------- #
-# Calculate coverage Escore
-meta_data$Escore <- unname(sapply(coverage_regions,
-                                  function(x)
-                                    evennessScore(x$coverage)))
+PACVr.complete(gbk.file=gbkFile, bam.file=bamFile, windowSize=250,
+    logScale=FALSE, threshold=0.5, syntenyLineType=3,relative=TRUE, 
+    textSize=0.5, output=outFile)
 ```
+![](https://github.com/michaelgruenstaeudl/Botany2021_Workshop/blob/main/extras/NC_045072_AssemblyCoverage_viz.png)
 
 
----
+#### Application of PACVr - Sequencing depth and sequencing evenness
 
-#### 3. airpg - Complex example
-Foo bar baz
+A more complex tutorial regarding the application of PACVr can be found [here](https://github.com/nilsj9/PlastidSequenceCoverage).
 
-```bash
-# Get total number of families represented by these records
-$ awk -F'\t' '{print $11}' airpg_ComplexExample_output1.tsv | \
-awk -F';' '{ for(i=1;i<=NF;i++) print $i }' | grep "aceae" | \
-sort -u | wc -l
-# 308
-```
-
-#1>>airpg_SimpleExample_output1.log 2>&1

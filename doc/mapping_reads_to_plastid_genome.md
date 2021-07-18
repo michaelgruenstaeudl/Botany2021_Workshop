@@ -12,6 +12,7 @@ Information needed:
 Software needed:
 + [NCBI Entrez Direct](https://www.ncbi.nlm.nih.gov/books/NBK179288/#_chapter6_Examples_) (>09/03/2016)
 + [NCBI SRA Toolkit](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software) (>2.10.8)
+  Note: Upon installation of NCBI SRA Toolkit, you will need to run its configuration script (`vdb-config --interactive`)
 + [Samtools](https://www.htslib.org/) (>1.10)
 + [Bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml) (>2.3.4)
 + [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) (>0.40)
@@ -47,7 +48,7 @@ ${PATH_ENTREZ}esearch -db nucleotide -query $ACCESSION | \
 ##### Download corresponding sequence reads from NCBI SRA
 ```bash
 mkdir -p ReadMapping
-${PATH_SRATOOL}prefetch --max-size 50000000 $SRA_NUMBER
+${PATH_SRATOOL}prefetch --max-size 20000000 $SRA_NUMBER
 ${PATH_SRATOOL}fasterq-dump.2.10.8 --split-3 \
   --skip-technical $SRA_NUMBER/$SRA_NUMBER.sra -O ReadMapping
 ```
