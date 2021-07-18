@@ -6,11 +6,11 @@ To measure sequencing depth and evenness of a plastid genome, the sequence reads
 ## Prerequisites
 
 Information needed:
-+ GenBank accession number of plastid genome record (e.g., NC_026562)
-+ Corresponding NCBI SRA number for raw reads (e.g., )
++ GenBank accession number of plastid genome record (e.g., [NC_026562](https://www.ncbi.nlm.nih.gov/nuccore/NC_026562))
++ Corresponding NCBI SRA number for raw reads (e.g., [SRR7285294](https://www.ncbi.nlm.nih.gov/sra/?term=SRR7285294))
 
 Software needed:
-+ [NCBI Entrez Direct] (https://www.ncbi.nlm.nih.gov/books/NBK179288/#_chapter6_Examples_) (>09/03/2016)
++ [NCBI Entrez Direct](https://www.ncbi.nlm.nih.gov/books/NBK179288/#_chapter6_Examples_) (>09/03/2016)
 + [NCBI SRA Toolkit](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software) (>2.10.8)
 + [Samtools](https://www.htslib.org/) (>1.10)
 + [Bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml) (>2.3.4)
@@ -23,7 +23,7 @@ Software needed:
 ##### Define target genome record and corresponding sequence reads
 ```bash
 ACCESSION=NC_026562
-SRA_NUMBER=$3
+SRA_NUMBER=SRR7285294
 ```
 
 ##### If software not installed globally, setting paths
