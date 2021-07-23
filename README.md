@@ -1,5 +1,7 @@
 ### Botany 2021 - Workshop
-Workshop W14 by Michael Gruenstaeudl during the conference "Botany 2021 Virtual"
+Michael Gruenstaeudl, Jul-18-2021
+
+This workshop was held as part of the conference [Botany 2021 Virtual!](https://2021.botanyconference.org/).
 
 # Assessing sequence coverage and inverted repeat annotations among complete plastid genomes
 
